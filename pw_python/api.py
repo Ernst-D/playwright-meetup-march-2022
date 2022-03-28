@@ -3,9 +3,8 @@ import os
 
 from dotenv import load_dotenv
 from typing import Generator
-from enum import auto
 
-from playwright.sync_api import Playwright, Page, APIRequestContext, expect
+from playwright.sync_api import Playwright, APIRequestContext
 
 load_dotenv()
 
