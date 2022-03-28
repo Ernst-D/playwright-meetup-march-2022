@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pw:codegen:demo": "npx playwright codegen -b webkit https://google.com --lang 'en-GB'",
+    "pw:trace:sharp":"npx playwright show-trace pw_sharp/PlaywrightTraceViewerDemo/trace.zip"
   },
   "keywords": [],
   "author": "",
