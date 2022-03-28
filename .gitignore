@@ -137,3 +137,6 @@ pw_sharp/**/*obj
 #py
 pw_python/__pycache__
 pw_python/.pytest_cache
+
+#pw traces
+*trace.zip
