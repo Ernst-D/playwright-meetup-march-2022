@@ -140,3 +140,4 @@ pw_python/.pytest_cache
 
 #pw traces
 *trace.zip
+auth.json
