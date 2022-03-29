@@ -40,7 +40,7 @@ def create_test_repository(
     api_request_context: APIRequestContext,
 ) -> Generator[None, None, None]:
     # Before all
-    new_repo = api_request_context.post("/user/repos", data={"name": f"GITHUB_REPO"})
+    new_repo = api_request_context.post("/user/repos", data={"name": GITHUB_REPO})
     assert new_repo.ok
     yield
     # After all

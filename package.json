@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pw:codegen:demo": "npx playwright codegen -b webkit https://google.com --lang 'en-GB'",
+    "pw:open:demo": "npx playwright open -b webkit https://github.com --lang 'en-GB'",
+    "pw:codegen:demo": "npx playwright codegen -b webkit https://github.com --lang 'en-GB'",
     "pw:trace:sharp":"npx playwright show-trace pw_sharp/PlaywrightTraceViewerDemo/trace.zip"
   },
   "keywords": [],
