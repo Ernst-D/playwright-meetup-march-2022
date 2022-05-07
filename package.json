@@ -6,16 +6,16 @@
   "scripts": {
     "pw:open:demo": "npx playwright open -b webkit https://github.com --lang 'en-GB'",
     "pw:codegen:demo": "npx playwright codegen -b webkit https://github.com --lang 'en-GB'",
-    "pw:trace:sharp":"npx playwright show-trace pw_sharp/PlaywrightTraceViewerDemo/trace.zip"
+    "pw:trace:sharp": "npx playwright show-trace pw_sharp/PlaywrightTraceViewerDemo/trace.zip"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^13.5.1"
+    "puppeteer": "^13.7.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.20.1",
-    "playwright": "^1.20.1"
+    "@playwright/test": "^1.21.1",
+    "playwright": "^1.21.1"
   }
 }
