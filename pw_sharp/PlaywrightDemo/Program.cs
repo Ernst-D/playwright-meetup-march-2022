@@ -1,5 +1,4 @@
 ﻿using Microsoft.Playwright;
-using System.Threading.Tasks;
 
 class Program
 {
@@ -18,15 +17,11 @@ class Program
             Locale = "de-DE"
         };
 
-        var pwContext = await browser.NewContextAsync();
         var gcpContext = await browser.NewContextAsync(gcpOptions);
 
-        var pwPage = await pwContext.NewPageAsync();
         var gcpPage = await gcpContext.NewPageAsync();
         
-        await pwPage.GotoAsync("https://playwright.dev/dotnet");
-        await pwPage.ScreenshotAsync(new PageScreenshotOptions { Path = "screenshot.pw.png" });
-        await gcpPage.GotoAsync("https://cloud.google.com");
-        await gcpPage.ScreenshotAsync(new PageScreenshotOptions { Path = "screenshot.gcp.png" });
+        await gcpPage.GotoAsync("https://www.whatismybrowser.com/");
+        await gcpPage.ScreenshotAsync(new PageScreenshotOptions { Path = "mybrowser.png" });
     }
 }
