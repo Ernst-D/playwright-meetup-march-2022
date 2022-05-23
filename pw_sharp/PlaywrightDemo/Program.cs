@@ -10,18 +10,18 @@ class Program
                 Headless = false
             }
         );
-
-        var gcpOptions = new BrowserNewContextOptions(playwright.Devices["iPhone 12 Pro"]){
+        // maybe try iPhone 12 to show "Safari on Windows"
+        var pageOpts = new BrowserNewContextOptions(playwright.Devices["Pixel 5"]){
             Geolocation = new() { Longitude = 12.492507f, Latitude = 41.889938f },
             Permissions = new[] { "geolocation" },
             Locale = "de-DE"
         };
 
-        var gcpContext = await browser.NewContextAsync(gcpOptions);
+        var context = await browser.NewContextAsync(pageOpts);
 
-        var gcpPage = await gcpContext.NewPageAsync();
+        var page = await context.NewPageAsync();
         
-        await gcpPage.GotoAsync("https://www.whatismybrowser.com/");
-        await gcpPage.ScreenshotAsync(new PageScreenshotOptions { Path = "mybrowser.png" });
+        await page.GotoAsync("https://www.whatismybrowser.com/");
+        await page.ScreenshotAsync(new PageScreenshotOptions { Path = "mybrowser.png" });
     }
 }
