@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pw:py:geo":"python ./pw_python/geo.py",
     "pw:dotnet:mobile_emu":"dotnet run --project ./pw_sharp/PlaywrightDemo",
     "pw:open:demo": "npx playwright open -b webkit https://github.com --lang 'en-GB'",
     "pw:codegen:demo": "npx playwright codegen -b webkit https://github.com --lang 'en-GB'",
