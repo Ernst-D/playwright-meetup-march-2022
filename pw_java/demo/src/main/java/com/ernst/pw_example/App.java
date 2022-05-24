@@ -12,7 +12,7 @@ public class App
             Browser browser = playwright.chromium().launch(
                 new BrowserType.LaunchOptions()
                 .setHeadless(false)
-                .setSlowMo(200)
+                .setSlowMo(500)
             );
             Page page = browser.newPage();
 
