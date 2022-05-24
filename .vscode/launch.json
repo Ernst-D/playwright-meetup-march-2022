@@ -5,6 +5,13 @@
             "type": "java",
             "name": "Launch App",
             "request": "launch",
+            "mainClass": "com.ernst.pw_example.App",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
             "mainClass": "com.example.App"
         },
         {
