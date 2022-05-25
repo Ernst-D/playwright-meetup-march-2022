@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pw:circle":"cd pw_js && npx playwright test --project Mobile_Safari",
     "pw:go:pdf:open": "npx playwright cr ./pw_golang/playwright-example.pdf",
     "pw:go:pdf": "cd pw_golang && rimraf *.pdf && go run main.go",
     "pw:py:geo": "python ./pw_python/geo.py",

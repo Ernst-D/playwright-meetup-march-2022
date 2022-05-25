@@ -75,7 +75,7 @@ const config = {
       },
     },
     {
-      name: 'Mobile Safari',
+      name: 'Mobile_Safari',
       use: {
         ...devices['iPhone 12'],
       },
