@@ -25,7 +25,7 @@ public class App
                 System.out.println(String.format("%s | %s: %s \n", handler.type(),handler.location(),handler.text()));
             });
 
-            page.navigate("http://localhost:3000/");
+            page.navigate("http://localhost:3003/");
             page.locator("input[name=\"username\"]").fill("Tavares_Barrows");
             page.locator("input[name=\"password\"]").fill("s3cret");
             page.locator("[data-test='signin-submit']").click();
