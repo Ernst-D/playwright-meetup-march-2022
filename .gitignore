@@ -143,6 +143,7 @@ pw_python/.pytest_cache
 auth.json
 *.png
 *.pdf
+reports
 
 #golang
 # Binaries for programs and plugins
