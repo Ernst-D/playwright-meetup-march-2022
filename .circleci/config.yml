@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1
+  node: circleci/node@5.0.2
 jobs:
   build:
     macos:
@@ -11,9 +11,9 @@ jobs:
       - node/install:
             node-version: "16.13.2"
       - run: node -v
-      - node/with-cache:
-          steps:
-            - run: npm install
+      - node/install-packages:
+          check-cache: always
+          with-cache: false
       - run: npm run pw:circle
 
       - store_artifacts:
