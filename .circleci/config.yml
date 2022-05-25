@@ -1,0 +1,26 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1
+jobs:
+  build:
+    macos:
+      xcode: "12.5.1"
+    resource_class: medium
+    steps:
+      - checkout
+      - node/install:
+            node-version: "16.13.2"
+      - run: node -v
+      - node/with-cache:
+          steps:
+            - run: npm install
+      - run: npm run pw:circle
+
+      - store_artifacts:
+          path: ./pw_js/screenshots
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build
